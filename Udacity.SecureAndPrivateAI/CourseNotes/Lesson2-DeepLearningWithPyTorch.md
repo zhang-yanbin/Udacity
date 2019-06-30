@@ -14,7 +14,13 @@
 - Miniconda, Anaconda
 - May need GPU
 
-#### Part 1- Tensors in PyTorch
+
+
+---
+
+#### Part 1 - Tensors in PyTorch
+
+##### Single layer neuro networks
 
 ```
 import torch
@@ -51,6 +57,10 @@ bias = torch.randn((1, 1))
 - `tensor.resize_(a,b)`
 - `tensor.view(a,b)`
 
+
+
+
+##### Neuro networks using matrix multiplications
 
 
 

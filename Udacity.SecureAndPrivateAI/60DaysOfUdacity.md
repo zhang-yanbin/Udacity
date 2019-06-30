@@ -7,7 +7,7 @@
     - setup udacity repo
     - update conda
     - install dependencies
-    - walk through concepts 2-8 (intro + part 1)
+    - walk through concepts 2-8 videos and exercises (intro + part 1)
 
 
 #### Day 2/60 - 06/30/2019
