@@ -92,3 +92,23 @@ https://github.com/zhang-yanbin/Udacity
 
 #### Day 20 - 07/20/2019
 1. Lesson 6: Concepts 1-3
+
+
+#### Day 21 - 07/21/2019
+1. Lesson 6: Concepts 4-6
+
+
+#### Day 22 - 07/22/2019
+1. Lesson 6: Concepts 7-8
+
+
+#### Day 23 - 07/23/2019
+1. Lesson 6: Review
+
+
+#### Day 24 - 07/24/2019
+1. Lesson 7: Concepts 1-3
+
+
+#### Day 25 - 07/25/2019
+1. Lesson 7: Concepts 4-5
