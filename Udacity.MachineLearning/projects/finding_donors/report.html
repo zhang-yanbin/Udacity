@@ -13143,10 +13143,11 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>The model we choose here is Gradient Boosting Classifier. It is an Ensemble method, which uses multiple learning algorithm to achieve better prediction and performance.</p>
-<p>Sometimes when we use one single learning algorithm, it may be an algorithm that performs poorly, or takes longer time to achieve the prediction, for example as the Naive Bayes algorithm in this case may perform relatively worse, and the SVC may take relatively longer time. Sometimes one single algorithm could be prone to overfitting, for example if we use many levels for a Decision Tree model.</p>
-<p>In Gradient Boosting, we combine weaker prediction models and build in stages. In each stage, we construct a new model that adds an estimator to provide a better model upon the previous model. The new model in each stage tries to correct the errors of its predecessor. This means we are going to achieve better model in each new stage.</p>
+<p>The model we choose here is Gradient Boosting Classifier. It is an Ensemble method, which uses multiple learning algorithms to achieve better prediction and performance. To reference an analogy here is: "If linear regression was a Toyota Camry, then gradient boosting would be a UH-60 Blackhawk Helicopter." (from <a href="http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/">http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/</a>).</p>
+<p>Sometimes when we use one single learning algorithm, it may be an algorithm that performs poorly, or takes longer time to achieve the prediction. Sometimes one single algorithm could be prone to overfitting.</p>
+<p>When using Gradient Boosting, we combine weaker prediction models and build in stages. In each stage, we construct a new model that adds an estimator to provide a better model upon the previous model. The new model in each stage tries to correct the errors of its predecessor. This means we are going to achieve better model in each new stage, which makes Gradient Boosting an effective technique here.</p>
 <ul>
+<li><a href="http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/">http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Gradient_boosting">https://en.wikipedia.org/wiki/Gradient_boosting</a></li>
 </ul>
 
