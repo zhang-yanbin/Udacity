@@ -11804,7 +11804,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11862,7 +11862,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -12005,7 +12005,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12173,7 +12173,7 @@ Relatively low in everything;</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
@@ -12184,7 +12184,7 @@ Relatively low in everything;</p>
 
 <span class="c1"># TODO: Split the data into training and testing sets(0.25) using the given feature as the target</span>
 <span class="c1"># Set a random state.</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">new_data</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Delicatessen&#39;</span><span class="p">],</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">new_data</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Grocery&#39;</span><span class="p">],</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
 <span class="c1"># TODO: Create a decision tree regressor and fit it to the training set</span>
 <span class="n">regressor</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -12210,7 +12210,7 @@ Relatively low in everything;</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0.9960019853775706
+<pre>0.6818840085440834
 </pre>
 </div>
 </div>
@@ -12239,8 +12239,8 @@ Relatively low in everything;</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>The feature I selected was <strong>Grocery</strong>.</p>
-<p>The reported prediction score is: 0.9960019853775706.</p>
-<p>Since this score is so close to 1, it indicates that the regressor predictions almost perfectly fits the data, which means that it may not be an important feature to consider when considering relevance here.</p>
+<p>The reported prediction score is: 0.6818840085440834.</p>
+<p>Since this score is close to 1, it indicates that the regressor predictions fits the data well, which means that it may not be an important feature to consider when considering relevance here.</p>
 
 </div>
 </div>
@@ -12256,7 +12256,7 @@ Relatively low in everything;</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -12319,7 +12319,7 @@ Relatively low in everything;</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span>
@@ -12336,13 +12336,13 @@ Relatively low in everything;</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[33]:</div>
+<div class="prompt output_prompt">Out[10]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a52fe92cc0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x231a8b6de10&gt;</pre>
 </div>
 
 </div>
@@ -12404,7 +12404,7 @@ Relatively low in everything;</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -12468,7 +12468,7 @@ Relatively low in everything;</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -12575,7 +12575,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
@@ -13426,7 +13426,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="k">import</span> <span class="n">PCA</span>
@@ -13497,10 +13497,10 @@ Once you have performed this implementation, the dataset will be stored in the v
 <li>The forth principal component: 0.0978</li>
 </ol>
 <p>The first - forth in total: 0.9279</p>
-<p>Dimension 1 has focus on Milk, Grocery, Detergents_Paper as increase of positive weighted features.</p>
-<p>Dimension 2 has focus on Fresh, Frozen, Delicatessen as increase of positive weighted features.</p>
-<p>Dimension 3 represents Fresh very well, but as decrease of negative weighted feature. This dimension also has a focus on Delicatessen as increase of positive weighted feature.</p>
-<p>Dimension 4 represents Fronzen very well, as decrease of negative weighted feature. This dimension also has a focus on Delicatessen as increase of positive weighted feature.</p>
+<p>Dimension 1 has higher weights in Milk, Grocery, Detergents_Paper, which could represent customers like grocery stores that focus on these categories.</p>
+<p>Dimension 2 has higher weights in Fresh, Frozen, Delicatessen, which could represent customers like food cart or who sell deli food that focus on these categories.</p>
+<p>Dimension 3 has very high weight in Fresh and relatively high weight in Delicatessen. This dimension could represent customers such as restaurants that focus on spending more on Fresh that is perishable or need to be fresh all the time and on and Delicatessen that complements resturant menus.</p>
+<p>Dimension 4 has relatively high weights in Fronzen and Delicatessen. This dimension could represent customers like local fish/meat and deli store that sell frozen food and some deli food, or occasionaly some prepared food.</p>
 
 </div>
 </div>
@@ -13516,7 +13516,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
@@ -13620,7 +13620,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with only two dimensions</span>
@@ -13652,7 +13652,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
@@ -13735,7 +13735,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a biplot</span>
@@ -13752,13 +13752,13 @@ Once you have performed this implementation, the dataset will be stored in the v
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[50]:</div>
+<div class="prompt output_prompt">Out[18]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1a52ec185f8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x231a887ef28&gt;</pre>
 </div>
 
 </div>
@@ -13857,7 +13857,7 @@ Gaussian Mixture Model clustering is able to sample membership of multiple clust
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">silhouette_score</span>
@@ -13955,7 +13955,7 @@ Gaussian Mixture Model clustering is able to sample membership of multiple clust
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Apply your clustering algorithm of choice to the reduced data </span>
@@ -14020,7 +14020,7 @@ Gaussian Mixture Model clustering is able to sample membership of multiple clust
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Inverse transform the centers</span>
@@ -14264,7 +14264,7 @@ Gaussian Mixture Model clustering is able to sample membership of multiple clust
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the predictions</span>
@@ -14346,9 +14346,11 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>Changing the frequency of delivery will most likely to affect customer who cares about product freshness. That means customer who focuses on perishable products, which could be Fresh, Milk categories, are most likely to favor this change. But for customers that buys more products like Detergents_Papers, they are not likely to care about this change very much.</p>
-<p>For customer in Segment 0, which focuses on Fresh, based on my assumption above, I would think that customer in Segment 0 favor this change more.</p>
-<p>In order to use A/B tests, we could have both control group and test group. The control group remains the same with 5 days delivery, while the test groups can be two groups for each clusters separately. As long as the test group reacts positively of the new test delivery service, we can switch that group over to 3 day delivery. If test group is indifferent to the new delivery change, we can choose to stay with the original delivery days.</p>
+<p>Changing the frequency of delivery will most likely to affect customer who cares about product freshness. That means customer who focuses on perishable products, which could be Fresh, Milk categories, are most likely to favor this change. But for customers that buys more products like Detergents_Papers, they are not likely to care about this change very much. For customer in Segment 0, which focuses on Fresh, based on my assumption above, I would think that customer in Segment 0 favor this change more.</p>
+<p>So here, if we treat the delivery days as a variable that affect customer spending, while controlling other parameters, we can use A/B testing to get more insight of the delivery days.</p>
+<p>For both clusters, we can divide each cluster into two groups: a control group (A) and an experiment group (B) as a ratio of 90% and 10%, or 95% and 5%. Then we can perform hypothese test on both group for each cluster. What we want to know is if we see statistical significance of the target variable: delivery days as 5 days or 3 days.
+If the A/B testing shows no statistical significance for both clusters of the target variable, as the seller, I may choose to abort the change to 3 day delivery.
+If for example, the A/B testing shows statistical significance for cluster segment 0 (represented by restaurants), while not statistical significance for cluster segment 1 (represented by grocery store or supermarkets). We may be inclined to assume that by changing the variable of delivery days to 3 days for cluster segment 0, customers that are assigned to this cluster may be more satisfied with this change and therefore possibly increase the spending.</p>
 
 </div>
 </div>
@@ -14388,7 +14390,7 @@ Sample point 2 predicted to be in Cluster 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the clustering results based on &#39;Channel&#39; data</span>
